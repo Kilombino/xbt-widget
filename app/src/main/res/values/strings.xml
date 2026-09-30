@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XBT Widget</string>
+    <string name="widget_description">Live XBT (Bitcoin-BLAKE2b) price</string>
+    <string name="loading">Loading…</string>
+    <string name="no_data">No data. Check your connection.</string>
+    <string name="updated_at">updated %1$s</string>
+    <string name="updated_stale">⚠ last data %1$s</string>
+    <string name="poolsats">Poolsats</string>
+    <string name="poolcoins">Poolcoins</string>
+    <string name="label_ratio">1 XBT</string>
+    <string name="label_range">24h range</string>
+    <string name="label_block">Block</string>
+    <string name="subtitle">Live price of XBT, the Bitcoin-BLAKE2b (BIP110) chain, on your home screen.</string>
+    <string name="unit_title">Show the ratio to the majority chain in</string>
+    <string name="add_widget">Add widget to home screen</string>
+    <string name="pin_hint">To add it: long-press your home screen, tap Widgets and pick XBT Widget.</string>
+    <string name="refresh">Refresh</string>
+    <string name="open_site">Open xbt.live</string>
+    <string name="about">XBT is the coin of the Bitcoin-BLAKE2b chain (BIP110). Poolcoins and Poolsats are the units of the SHA256d majority chain.\n\nPrice data from the public xbt.live endpoint, refreshed every 15 minutes, and at most once a minute when you tap refresh. No account, no tracking, no ads.\n\nNot financial advice. Prices come from public exchange data and can be delayed or wrong.</string>
+    <string name="version">XBT Widget %1$s · by Kilombino</string>
+</resources>

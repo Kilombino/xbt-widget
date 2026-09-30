@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Precio de XBT (Bitcoin-BLAKE2b) en directo</string>
+    <string name="loading">Cargando…</string>
+    <string name="no_data">Sin datos. Revisa la conexión.</string>
+    <string name="updated_at">act. %1$s</string>
+    <string name="updated_stale">⚠ último dato %1$s</string>
+    <string name="label_range">Rango 24h</string>
+    <string name="label_block">Bloque</string>
+    <string name="subtitle">El precio de XBT, la cadena Bitcoin-BLAKE2b (BIP110), en tu pantalla de inicio.</string>
+    <string name="unit_title">Mostrar la relación con la cadena mayoritaria en</string>
+    <string name="add_widget">Añadir widget a la pantalla de inicio</string>
+    <string name="pin_hint">Para añadirlo: mantén pulsada la pantalla de inicio, toca Widgets y elige XBT Widget.</string>
+    <string name="refresh">Actualizar</string>
+    <string name="open_site">Abrir xbt.live</string>
+    <string name="about">XBT es la moneda de la cadena Bitcoin-BLAKE2b (BIP110). Poolcoins y Poolsats son las unidades de la cadena mayoritaria SHA256d.\n\nPrecio del endpoint público de xbt.live, actualizado cada 15 minutos, y como mucho una vez por minuto si pulsas actualizar. Sin cuenta, sin rastreo, sin anuncios.\n\nNo es asesoramiento financiero. Los precios vienen de datos públicos de exchanges y pueden ir con retraso o ser erróneos.</string>
+    <string name="version">XBT Widget %1$s · por Kilombino</string>
+</resources>
