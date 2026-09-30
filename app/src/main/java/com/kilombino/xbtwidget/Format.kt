@@ -23,7 +23,7 @@ object Format {
 
     fun block(h: Long?): String = if (h == null) "–" else "#" + String.format(loc(), "%,d", h)
 
-    /** Relación con la cadena mayoritaria, en Poolsats o en Poolcoins. */
+    /** Relación con la Spamchain, en Poolsats o en Poolcoins. */
     fun ratio(ctx: Context, q: XbtQuote): String {
         val r = q.xbtPerPoolcoin ?: return "–"
         return if (XbtRepository.unit(ctx) == XbtRepository.UNIT_POOLCOINS) {

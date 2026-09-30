@@ -8,7 +8,7 @@ Android home screen widget with the live price of **XBT**, the coin of the Bitco
 </p>
 
 - XBT price in USD and 24h change
-- Ratio to the SHA256d majority chain, in **Poolsats** or **Poolcoins**
+- Ratio to the Spamchain (the SHA256d chain), in **Poolsats** or **Poolcoins**
 - 24h range, block height and time of the last update
 - Resizable: a compact layout is used when the widget is small
 - Background refresh every 15 minutes; refresh button limited to once a minute

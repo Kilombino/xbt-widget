@@ -11,7 +11,7 @@ data class XbtQuote(
     val changePct: Double?,
     val high24: Double?,
     val low24: Double?,
-    /** Cuántos Poolcoins (cadena SHA256d mayoritaria) vale 1 XBT. */
+    /** Cuántos Poolcoins (Spamchain, la cadena SHA256d) vale 1 XBT. */
     val xbtPerPoolcoin: Double?,
     val height: Long?,
     val updatedMs: Long,
@@ -92,5 +92,5 @@ object XbtRepository {
 
 /** Evita depender de BuildConfig (desactivado por defecto en AGP 8). */
 object BuildConfigInfo {
-    const val VERSION = "1.0.1"
+    const val VERSION = "1.0.2"
 }
