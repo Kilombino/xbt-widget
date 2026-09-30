@@ -1,3 +1,10 @@
+## 1.0.1
+
+### Changed
+- Round app icon, like the Kilombino Bitcoin-Blake2b wallet (adaptive icon that fills the whole circle).
+- Round logo inside the widget and the app.
+- Published and signed by Kilombino, with the same signing key as the Kilombino Bitcoin-Blake2b wallet.
+
 ## 1.0.0
 
 ### Added
