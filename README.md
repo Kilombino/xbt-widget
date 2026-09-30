@@ -3,8 +3,8 @@
 Android home screen widget with the live price of **XBT**, the coin of the Bitcoin-BLAKE2b chain (BIP110).
 
 <p>
-<img src="docs/widget.png" width="360" alt="Widget on the home screen">
-<img src="docs/app.png" width="220" alt="App screen">
+<img src="docs/screenshots/widget.jpg" width="280" alt="Widget on the home screen">
+<img src="docs/screenshots/app.jpg" width="280" alt="App screen">
 </p>
 
 - XBT price in USD and 24h change
