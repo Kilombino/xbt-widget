@@ -17,6 +17,12 @@
     <string name="pin_hint">To add it: long-press your home screen, tap Widgets and pick XBT Widget.</string>
     <string name="refresh">Refresh</string>
     <string name="open_site">Open xbt.live</string>
-    <string name="about">XBT is the coin of the Bitcoin-BLAKE2b chain (BIP110). Poolcoins and Poolsats are the units of the Spamchain, the SHA256d chain.\n\nPrice data from the public xbt.live endpoint, refreshed every 15 minutes, and at most once a minute when you tap refresh. No account, no tracking, no ads.\n\nNot financial advice. Prices come from public exchange data and can be delayed or wrong.</string>
+    <string name="about">XBT is the coin of the Bitcoin-BLAKE2b chain (BIP110). Poolcoins and Poolsats are the units of the Spamchain, the SHA256d chain.\n\nPrice data from the public xbt.live endpoint; mining and network data from mempool.kilombino.com. Refreshed every 15 minutes, and at most once a minute when you tap refresh. No account, no tracking, no ads.\n\nNot financial advice. Prices come from public exchange data and can be delayed or wrong.</string>
     <string name="version">XBT Widget %1$s · by Kilombino</string>
+    <string name="label_earns">1 TH/s earns</string>
+    <string name="label_rent">1 TH/s rent</string>
+    <string name="label_kwh">1 XBT =</string>
+    <string name="kwh_miner">with a %1$s</string>
+    <string name="label_ysh">YSH 1 XBT =</string>
+    <string name="label_chain">Blockchain</string>
 </resources>

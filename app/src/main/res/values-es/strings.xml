@@ -13,6 +13,10 @@
     <string name="pin_hint">Para añadirlo: mantén pulsada la pantalla de inicio, toca Widgets y elige XBT Widget.</string>
     <string name="refresh">Actualizar</string>
     <string name="open_site">Abrir xbt.live</string>
-    <string name="about">XBT es la moneda de la cadena Bitcoin-BLAKE2b (BIP110). Poolcoins y Poolsats son las unidades de la Spamchain, la cadena SHA256d.\n\nPrecio del endpoint público de xbt.live, actualizado cada 15 minutos, y como mucho una vez por minuto si pulsas actualizar. Sin cuenta, sin rastreo, sin anuncios.\n\nNo es asesoramiento financiero. Los precios vienen de datos públicos de exchanges y pueden ir con retraso o ser erróneos.</string>
+    <string name="about">XBT es la moneda de la cadena Bitcoin-BLAKE2b (BIP110). Poolcoins y Poolsats son las unidades de la Spamchain, la cadena SHA256d.\n\nPrecio del endpoint público de xbt.live; datos de minado y de red de mempool.kilombino.com. Se actualiza cada 15 minutos, y como mucho una vez por minuto si pulsas actualizar. Sin cuenta, sin rastreo, sin anuncios.\n\nNo es asesoramiento financiero. Los precios vienen de datos públicos de exchanges y pueden ir con retraso o ser erróneos.</string>
     <string name="version">XBT Widget %1$s · por Kilombino</string>
+    <string name="label_earns">1 TH/s rinde</string>
+    <string name="label_rent">Alquiler 1 TH/s</string>
+    <string name="kwh_miner">con un %1$s</string>
+    <string name="label_chain">Tamaño blockchain</string>
 </resources>

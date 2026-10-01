@@ -22,7 +22,10 @@ import java.util.concurrent.TimeUnit
 class UpdateWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, params) {
 
     override suspend fun doWork(): Result {
-        withContext(Dispatchers.IO) { XbtRepository.refresh(applicationContext) }
+        withContext(Dispatchers.IO) {
+            XbtRepository.refresh(applicationContext)
+            HeaderRepository.refresh(applicationContext)   // opcional: si falla, sigue el precio
+        }
         Widgets.renderAll(applicationContext)
         return Result.success()
     }
@@ -34,7 +37,11 @@ class UpdateWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx
         private val net = Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build()
 
         fun schedule(ctx: Context) {
+            // Retardo inicial aleatorio: si mucha gente instala la app a la vez (tras un
+            // anuncio, por ejemplo), sus consultas quedan repartidas en el cuarto de hora
+            // en vez de llegar todas en el mismo minuto.
             val req = PeriodicWorkRequestBuilder<UpdateWorker>(15, TimeUnit.MINUTES)
+                .setInitialDelay((0L..14L).random(), TimeUnit.MINUTES)
                 .setConstraints(net).build()
             WorkManager.getInstance(ctx)
                 .enqueueUniquePeriodicWork(PERIODIC, ExistingPeriodicWorkPolicy.KEEP, req)

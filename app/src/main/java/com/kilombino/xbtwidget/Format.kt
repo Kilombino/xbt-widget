@@ -39,4 +39,23 @@ object Format {
         val t = DateFormat.getTimeInstance(DateFormat.SHORT, loc()).format(Date(q.fetchedMs))
         return if (isStale(q)) ctx.getString(R.string.updated_stale, t) else ctx.getString(R.string.updated_at, t)
     }
+
+    // ── Datos del cabecero de mempool.kilombino.com ──────────────────────────
+    private fun usdShort(v: Double?): String = if (v == null) "" else " · $" + String.format(loc(), "%,.2f", v)
+
+    fun earns(h: HeaderData?): String =
+        if (h?.thsXbtDay == null) "–" else String.format(loc(), "%.4f", h.thsXbtDay) + " XBT/d" + usdShort(h.thsUsdDay)
+
+    fun rent(h: HeaderData?): String =
+        if (h?.rentPoolsatsPerThDay == null) "–"
+        else String.format(loc(), "%,d", h.rentPoolsatsPerThDay.roundToLong()) + " Poolsats/d" + usdShort(h.rentUsdPerThDay)
+
+    fun kwh(h: HeaderData?): String =
+        if (h?.kwhPerXbt == null) "–" else String.format(loc(), "%,d", h.kwhPerXbt.roundToLong()) + " kWh"
+
+    fun ysh(h: HeaderData?): String =
+        if (h?.yshValue == null) "–" else String.format(loc(), "%.2f", h.yshValue) + " " + (h.yshUnit ?: "")
+
+    fun chain(h: HeaderData?): String =
+        if (h?.chainSizeGB == null) "–" else String.format(loc(), "%,.2f", h.chainSizeGB) + " GB"
 }

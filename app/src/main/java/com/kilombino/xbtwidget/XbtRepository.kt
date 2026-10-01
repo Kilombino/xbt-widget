@@ -92,5 +92,5 @@ object XbtRepository {
 
 /** Evita depender de BuildConfig (desactivado por defecto en AGP 8). */
 object BuildConfigInfo {
-    const val VERSION = "1.0.2"
+    const val VERSION = "1.1.0"
 }

@@ -58,6 +58,7 @@ class MainActivity : Activity() {
     private fun refresh() {
         Thread {
             val q = XbtRepository.refresh(applicationContext)
+            HeaderRepository.refresh(applicationContext)
             main.post {
                 show()
                 Widgets.renderAll(this)
@@ -86,5 +87,12 @@ class MainActivity : Activity() {
         findViewById<TextView>(R.id.range).text = Format.range(q)
         findViewById<TextView>(R.id.block).text = Format.block(q.height)
         findViewById<TextView>(R.id.updated).text = "xbt.live · " + Format.updated(this, q)
+        val h = HeaderRepository.cached(this)
+        findViewById<TextView>(R.id.earns).text = Format.earns(h)
+        findViewById<TextView>(R.id.rent).text = Format.rent(h)
+        findViewById<TextView>(R.id.kwh).text = Format.kwh(h)
+        findViewById<TextView>(R.id.kwh_miner).text = h?.miner?.let { getString(R.string.kwh_miner, it) } ?: ""
+        findViewById<TextView>(R.id.ysh).text = Format.ysh(h)
+        findViewById<TextView>(R.id.chain).text = Format.chain(h)
     }
 }

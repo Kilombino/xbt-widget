@@ -1,3 +1,13 @@
+## 1.1.0
+
+### Added
+- Large widget size (4 rows tall or more) with the mining and network data from the mempool.kilombino.com header: what 1 TH/s earns per day, the cheapest rent of 1 TH/s, the energy of 1 XBT in kWh, YSH and the blockchain size.
+- The same data on the app screen.
+
+### Changed
+- The widget asks for new data on a random minute of the quarter hour, so many phones don't all ask at once.
+- The server can tell the app to poll less often, and the app slows down by itself when the server doesn't answer.
+
 ## 1.0.2
 
 ### Changed
